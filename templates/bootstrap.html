@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8"/>
+    <link rel="preconnect" href=""/>
+    <link rel="dns-prefetch" href=""/>
+    <link rel="dns-prefetch" href=""/>
+    {{CSS_FILES}}
+    <script>
+        try {window.jsFlags = JSON.parse({{FLAGS}});} catch (e){}
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .loader-shell {
+            color: transparent;
+            transform: translateZ(0);
+            background-color: rgba(0,0,0,0.1);
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, transparent), color-stop(50%,rgba(255,255,255,0.35)), color-stop(100%, transparent));
+            background-repeat: no-repeat;
+            -webkit-animation: loading-shell 2s linear infinite;
+        }
+        @keyframes loading-shell {
+            0%{background-position: -500px 0}
+            100%{background-position: 500px 0}
+        }
+    </style>
+</head>
+<body>
+    <div id="initialLoader" style="position: absolute; top: 0; left: 0; width: 100%; height: 50%;">
+        {{SHELL}}
+    </div>
+    {{JS_FILES}}
+</body>
+</html>

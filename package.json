@@ -1,0 +1,27 @@
+{
+  "name": "app-server",
+  "version": "1.0.0",
+  "description": "test app server",
+  "main": "index.js",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "express-minify-html": "^0.6.0",
+    "object.assign": "^4.0.4",
+    "ua-parser": "^0.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geniusfruit/app-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geniusfruit/app-server/issues"
+  },
+  "homepage": "https://github.com/geniusfruit/app-server"
+}
